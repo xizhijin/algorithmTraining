@@ -26,9 +26,9 @@ public class BinarySearchLoopImpl {
 		int[] whiteList = new In(new File("tinyW.txt")).readAllInts();
 		int[] checkList = new In(new File("tinyT.txt")).readAllInts();
 		Arrays.sort(whiteList);
-		for(int i = 0; i < checkList.length; i++) {
+		for (int i = 0; i < checkList.length; i++) {
 			int key = checkList[i];
-			if(binarySearch(key, whiteList) < 0) {
+			if (binarySearch(key, whiteList) < 0) {
 				StdOut.println(key);
 			}
 		}
